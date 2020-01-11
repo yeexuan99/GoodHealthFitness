@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GoodHealthFitness</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="bio">Hi, we are GoodHealth Fitness.
+\n\GoodHealth Fitness app development is in high gear. According to Coherent Market Insights, the global sports and fitness apps market is predicted to show a tremendous CAGR of 20.4 percent from 2019 to 2027.
+\n\nWe decided to write this article in response to the startling pace of development in this industry.
+\nWe cover the most common types of apps that help users keep fit.
+\n\nWe also talk about the market leaders, discuss the reasons for their success, and share our experience developing health and fitness apps.
+</string>
+</resources>

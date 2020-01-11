@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bmi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="BMI / FFMI"
+        android:textColor="@color/colorAccent"
+        android:textSize="34sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gender_tv"
+        android:fontFamily="@font/lato_medium"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/bmi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI / FFMI"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/gender_tv"
+        android:id="@+id/ll"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/bmi_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="BMI"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/selected_round"
+            android:fontFamily="@font/lato_semibold"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            />
+
+        <Button
+            android:id="@+id/ffmi_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="FFMI"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/unselected_round"
+            android:fontFamily="@font/lato_semibold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="20dp"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/weight_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lato_medium"
+        android:text="Weight (Kg)"
+        android:textColor="@color/green_tv" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/weight_et"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/weight_tv"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:focusable="false"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/lato_bold"
+        />
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/weight_picker"
+        android:layout_below="@+id/weight_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorPrimary"
+        app:indicator_color="@color/green_tv"
+        app:indicator_interval="14dp"
+        app:indicator_width="2dp"
+        app:max_value="200"
+        app:min_value="0"
+        app:notch_color="@color/trans"
+        app:ruler_text_size="5sp"
+        app:ruler_text_color="@color/colorAccent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/height_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lato_medium"
+        android:text="Height (Cm)"
+        android:textColor="@color/green_tv" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/height_et"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/height_tv"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:focusable="false"
+        android:gravity="center"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/lato_bold"
+        />
+
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/height_picker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/height_et"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorPrimary"
+        app:indicator_color="@color/green_tv"
+        app:indicator_interval="14dp"
+        app:indicator_width="2dp"
+        app:max_value="250"
+        app:min_value="0"
+        app:notch_color="@color/trans"
+        app:ruler_text_color="@color/colorAccent"
+        app:ruler_text_size="5sp" />
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_radius"
+        android:fontFamily="@font/lato_semibold"
+        android:padding="10dp"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/error_tv"
+        android:layout_below="@id/calculate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:text="Height/Weight should be greater than 0."
+        />
+
+</RelativeLayout>

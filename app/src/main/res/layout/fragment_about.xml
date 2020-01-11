@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:id="@+id/name_text"
+        style="@style/Theme.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/star_image"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:layout_marginTop="16dp"
+        android:maxWidth="70dp"
+        android:maxHeight="70dp"
+        app:srcCompat="@drawable/ic_launcher" />
+
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/Theme.AppCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Hi, we are GoodHealth Fitness.
+\n\GoodHealth Fitness app development is in high gear. According to Coherent Market Insights, the global sports and fitness apps market is predicted to show a tremendous CAGR of 20.4 percent from 2019 to 2027.
+\n\nWe decided to write this article in response to the startling pace of development in this industry.
+\nWe cover the most common types of apps that help users keep fit.
+\n\nWe also talk about the market leaders, discuss the reasons for their success, and share our experience developing health and fitness apps." />
+    </ScrollView>
+</LinearLayout>

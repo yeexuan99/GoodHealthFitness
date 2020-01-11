@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "539626808218",
+    "firebase_url": "https://goodhealthfitness-95cf6.firebaseio.com",
+    "project_id": "goodhealthfitness-95cf6",
+    "storage_bucket": "goodhealthfitness-95cf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539626808218:android:0211349542c31d13d71023",
+        "android_client_info": {
+          "package_name": "com.example.goodhealthfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539626808218-l7ng8fjmbfrafjq4l279ffp1fkq16inn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.goodhealthfitness",
+            "certificate_hash": "cb731068de18b97a96e167388363a0f83814f5df"
+          }
+        },
+        {
+          "client_id": "539626808218-55d5q09595uj0r6a76o87hm41tl7u4ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbOWbAdiwVq_Lplj8BMA7JWpMMn4tj-x4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539626808218-55d5q09595uj0r6a76o87hm41tl7u4ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

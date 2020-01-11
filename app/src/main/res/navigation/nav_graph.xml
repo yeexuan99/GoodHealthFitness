@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.goodhealthfitness.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/about_to_home"
+            app:destination="@+id/homeFragment" />
+        <action
+            android:id="@+id/about_to_profile"
+            app:destination="@id/profileActivity" />
+        <action
+            android:id="@+id/about_to_settings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.goodhealthfitness.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/settings_to_home"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/settings_to_about"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.goodhealthfitness.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/home_to_about"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/home_to_profile"
+            app:destination="@id/profileActivity" />
+        <action
+            android:id="@+id/home_to_settings"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/home_to_BMI"
+            app:destination="@id/BMIActivity" />
+        <action
+            android:id="@+id/home_to_login"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/home_to_register"
+            app:destination="@id/registerActivity" />
+        <action
+            android:id="@+id/home_to_workout"
+            app:destination="@id/workoutActivity" />
+        <action
+            android:id="@+id/home_to_fitness"
+            app:destination="@id/fitnessActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="com.example.goodhealthfitness.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+    <activity
+        android:id="@+id/BMIActivity"
+        android:name="com.example.goodhealthfitness.BMIActivity"
+        android:label="activity_bmi"
+        tools:layout="@layout/activity_bmi" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.goodhealthfitness.LoginActivity"
+        android:label="LoginActivity" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.goodhealthfitness.RegisterActivity"
+        android:label="RegisterActivity" />
+    <activity
+        android:id="@+id/workoutActivity"
+        android:name="com.example.goodhealthfitness.WorkoutActivity"
+        android:label="activity_workout"
+        tools:layout="@layout/activity_workout" />
+    <activity
+        android:id="@+id/fitnessActivity"
+        android:name="com.example.goodhealthfitness.FitnessActivity"
+        android:label="activity_fitness"
+        tools:layout="@layout/activity_fitness" />
+</navigation>
